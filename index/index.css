@@ -12,7 +12,7 @@
 
 .Header {
  display: flex;
- justify-content: center;
+ justify-content: space-between;
  align-items: center;
  color: rgb(0, 0, 0);
  font-size: 75px;
@@ -22,8 +22,9 @@
 
 .Indice {
  display: flex;
- justify-content: center; /*use "flex-start" en caso de que esté raro*/
+ justify-content: flex-start;
  align-items: flex-start;
+ flex-direction: column;
  color: rgb(0, 0, 0);
  font-size: 35px;
  grid-area: I;
@@ -40,9 +41,42 @@
 .Footer {
  display: flex;
  justify-content: flex-start;
- flex-direction: column;
+ flex-direction: row;
  color: rgb(0, 0, 0);
  font-size: 25px;
  grid-area: F;
  background-color: green;
+}
+
+.Lista {
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ flex-direction: row;
+ color: rgb(0, 0, 0);
+ font-size: 25px;
+ background-color: green;
+ width: 100%;      
+ padding: 0;   
+ list-style: none;    
+}
+
+.imagen {
+  width: 350px;          
+  height: 350px;         
+  border-radius: 100%;         
+}
+
+.IndT {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: rgb(0, 0, 0);
+ font-size: 50px;
+ width: 100%;      
+ padding: 0;      
+}
+
+.Lista a {
+  color: black !important;
 }
