@@ -36,8 +36,8 @@ header {
 
     padding: 20px 30px;
 
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
+    background-color: #dddddd;
+    border: 1px solid #cccccc;
 }
 
 header h1 {
@@ -123,8 +123,8 @@ footer {
 
     padding: 15px 20px;
 
-    background-color: #ffffff;
-    border: 1px solid #dddddd;
+    background-color: #dddddd;
+    border: 1px solid #cccccc;
 }
 
 footer h2 {
