@@ -154,3 +154,75 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+
+
+/*Funcionalidad 2*/
+.panel-apariencia {
+    margin-top: 20px;
+}
+
+.panel-apariencia button {
+    margin: 4px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.panel-apariencia .seleccionado {
+    background-color: #555;
+    color: white;
+}
+
+/*modo oscuro*/
+body.oscuro {
+    background-color: #222;
+    color: #eee;
+}
+
+body.oscuro .contenedor-wiki {
+    background-color: #222;
+    color: #eee;
+}
+
+body.oscuro .contenedor-wiki header,
+body.oscuro .contenedor-wiki aside,
+body.oscuro .contenedor-wiki main,
+body.oscuro .contenedor-wiki footer,
+body.oscuro h1,
+body.oscuro h2,
+body.oscuro h3 {
+    background-color: #333;
+    color: #eee;
+}
+
+body.oscuro a {
+    color: #8ab4f8;
+}
+
+/*tamaños del texto*/
+main.texto-pequeno p,
+main.texto-pequeno li {
+    font-size: 0.8em;
+}
+
+main.texto-pequeno h2 {
+    font-size: 1.4em;
+}
+
+main.texto-estandar p,
+main.texto-estandar li {
+    font-size: 1em;
+}
+
+main.texto-estandar h2 {
+    font-size: 1.6em;
+}
+
+main.texto-grande p,
+main.texto-grande li {
+    font-size: 1.2em;
+}
+
+main.texto-grande h2 {
+    font-size: 1.8em;
+}
