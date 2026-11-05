@@ -55,3 +55,14 @@ botonGrande.addEventListener('click', function () {
     botonPequeno.classList.remove('seleccionado');
     botonEstandar.classList.remove('seleccionado');
 });
+
+
+
+//Funcionalidad 3: secciones plegables
+const titulosPlegables = document.querySelectorAll('main section h2');
+
+titulosPlegables.forEach(function (titulo) {
+    titulo.addEventListener('click', function () {
+        titulo.parentElement.classList.toggle('plegada');
+    });
+});
