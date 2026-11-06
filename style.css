@@ -241,8 +241,17 @@ main h2 {
     font-size: 1.6em;
 }
 
+main p,
+main li,
+main label,
+main button {
+    font-size: 1em;
+}
+
 main.texto-pequeno p,
-main.texto-pequeno li {
+main.texto-pequeno li,
+main.texto-pequeno label,
+main.texto-pequeno button {
     font-size: 0.8em;
 }
 
@@ -251,7 +260,9 @@ main.texto-pequeno h2 {
 }
 
 main.texto-estandar p,
-main.texto-estandar li {
+main.texto-estandar li,
+main.texto-estandar label,
+main.texto-estandar button {
     font-size: 1em;
 }
 
@@ -260,7 +271,9 @@ main.texto-estandar h2 {
 }
 
 main.texto-grande p,
-main.texto-grande li {
+main.texto-grande li,
+main.texto-grande label,
+main.texto-grande button {
     font-size: 1.2em;
 }
 
@@ -335,4 +348,151 @@ footer,
 .panel-apariencia,
 main section {
     border-radius: 10px;
+}
+
+main section.plegada #formulario-comentarios,
+main section.plegada #aviso-comentarios {
+    display: none;
+}
+
+
+
+/*Funcionalidad 4*/
+#formulario-comentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+#formulario-comentarios label {
+    font-weight: bold;
+}
+
+#formulario-comentarios input,
+#formulario-comentarios textarea {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #333333;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+#formulario-comentarios input:focus,
+#formulario-comentarios textarea:focus {
+    outline: 2px solid #999999;
+}
+
+#texto-comentario {
+    resize: vertical;
+    min-height: 90px;
+}
+
+#formulario-comentarios button {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    background-color: #dddddd;
+    color: #333333;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#formulario-comentarios button:hover {
+    background-color: #cccccc;
+}
+
+#contador-caracteres {
+    margin: 0;
+    color: #666666;
+    font-size: 14px;
+    text-align: right;
+}
+
+#aviso-comentarios {
+    color: #b3261e;
+    font-weight: bold;
+}
+
+.error {
+    border: 2px solid #b3261e !important;
+    background-color: #fff0f0 !important;
+}
+
+#lista-comentarios {
+    padding: 0;
+    margin-top: 20px;
+    list-style: none;
+}
+
+#lista-comentarios li {
+    margin-bottom: 12px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+#lista-comentarios strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #333333;
+    overflow-wrap: anywhere;
+}
+
+#lista-comentarios p {
+    margin: 0 0 12px 0;
+    overflow-wrap: anywhere;
+}
+
+.boton-borrar-comentario {
+    padding: 6px 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    background-color: #e5e5e5;
+    color: #333333;
+    cursor: pointer;
+}
+
+.boton-borrar-comentario:hover {
+    background-color: #cccccc;
+}
+
+body.oscuro #formulario-comentarios input,
+body.oscuro #formulario-comentarios textarea {
+    background-color: #252525;
+    color: #eeeeee;
+    border-color: #666666;
+}
+
+body.oscuro #formulario-comentarios button,
+body.oscuro .boton-borrar-comentario {
+    background-color: #444444;
+    color: #eeeeee;
+    border-color: #666666;
+}
+
+body.oscuro #formulario-comentarios button:hover,
+body.oscuro .boton-borrar-comentario:hover {
+    background-color: #555555;
+}
+
+body.oscuro #contador-caracteres {
+    color: #bbbbbb;
+}
+
+body.oscuro #lista-comentarios li {
+    background-color: #303030;
+    border-color: #555555;
+}
+
+body.oscuro #lista-comentarios strong {
+    color: #eeeeee;
+}
+
+body.oscuro .error {
+    background-color: #442222 !important;
+    border-color: #ff7777 !important;
 }
