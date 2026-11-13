@@ -19,6 +19,7 @@ const botonEstandar = document.querySelector('#boton-estandar');
 const botonGrande = document.querySelector('#boton-grande');
 const articulo = document.querySelector('main');
 
+    //Funcionalidad 2: Controlar el Modo Oscuro
 botonModo.addEventListener('click', function () {
     document.body.classList.toggle('oscuro');
     if (document.body.classList.contains('oscuro')) {
@@ -29,6 +30,7 @@ botonModo.addEventListener('click', function () {
 
 });
 
+    //Funcionalidad 2: Controlar el tamaño del texto
 botonPequeno.addEventListener('click', function () {
     articulo.classList.remove('texto-estandar');
     articulo.classList.remove('texto-grande');
@@ -59,9 +61,7 @@ botonGrande.addEventListener('click', function () {
 
 
 //Funcionalidad 3: secciones plegables
-const titulosPlegables = document.querySelectorAll('main section h2');
-
-titulosPlegables.forEach(function (titulo) {
+titulos.forEach(function (titulo) {
     titulo.addEventListener('click', function () {
         titulo.parentElement.classList.toggle('plegada');
     });

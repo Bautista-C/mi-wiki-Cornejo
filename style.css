@@ -496,3 +496,7 @@ body.oscuro .error {
     background-color: #442222 !important;
     border-color: #ff7777 !important;
 }
+
+body.oscuro #aviso-comentarios {
+    color: #ff8a80;
+}
